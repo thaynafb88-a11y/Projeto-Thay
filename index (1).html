@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Blog de Memórias</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8; /* fundo suave */
+  color: #2c3e50; /* texto principal */
+  transition: 0.3s;
+}
+
+header {
+  background: #34495e; /* azul acinzentado elegante */
+  color: #ecf0f1;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  margin: 10px;
+  color: #bdc3c7; /* cinza claro */
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px;
+  cursor: pointer;
+  background: #ecf0f1;
+  color: #2c3e50;
+  border: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 20px;
+}
+
+#blog {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background: #ffffff; /* branco clean */
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s;
+  color: #2c3e50;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background: #2c3e50;
+  color: #bdc3c7;
+  text-align: center;
+  padding: 10px;
+}
+
+/* TEMA ESCURO */
+.dark {
+  background: #121212;
+  color: #ecf0f1;
+}
+
+.dark header {
+  background: #1c1c1c;
+}
+
+.dark .card {
+  background: #2a2a2a;
+  color: #ecf0f1;
+}
+
+.dark footer {
+  background: #000;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Blog de Memórias</h1>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#sobre">Sobre</a>
+<a href="#blog">Blog</a>
+<a href="#contato">Contato</a>
+</nav>
+
+<button onclick="toggleTema()">🌙 Alternar Tema</button>
+</header>
+
+<section id="home">
+<h2>Sejam muito bem vindos ao meu blog de memórias</h2>
+<p>Este blog nasceu do meu desejo de guardar momentos que marcaram a minha vida. Cada viagem, cada paisagem e cada detalhe vivido se transformam aqui em memórias escritas, como uma forma de eternizar aquilo que senti em cada lugar.
+
+    Mais do que registrar destinos, este espaço representa experiências reais.Instantes em que o tempo parece desacelerar, em que tudo faz sentido e em que percebemos o quanto o mundo é cheio de beleza. 
+    
+    Assim como em um dorama, acredito que cada momento carrega uma história única, e que são esses pequenos episódios que constroem quem somos.
+Ao longo das minhas viagens, encontrei não apenas lugares incríveis, mas também sentimentos que não podem ser explicados apenas por fotos. Este blog é uma forma de compartilhar essas vivências, mostrando que cada cenário pode se transformar em uma lembrança inesquecível.
+
+Aqui, você vai encontrar paisagens, histórias e reflexões que fazem parte da minha trajetória. Mais do que um simples registro, este blog é um convite: para sentir, sonhar e, quem sabe, também viver momentos que se tornem especiais.
+
+
+Porque, no fim, não são apenas viagens… são capítulos da minha própria história sendo escritos pelo mundo.
+
+</p>
+</section>
+
+<section id="sobre">
+<h2>Sobre</h2>
+<p>Sou apaixonada por viagens, paisagens e por tudo que me permita viver momentos únicos. Acredito que cada lugar guarda uma história e que cada experiência pode se transformar em uma memória inesquecível.
+
+Criei este blog para registrar e compartilhar um pouco dessas vivências, mostrando não apenas destinos, mas também sentimentos e reflexões que fazem parte da minha trajetória.
+
+Mais do que viajar, busco sentir, aprender e guardar cada instante. Porque, no fim, são esses momentos que realmente dão sentido à vida.</p> .</p>
+</section>
+
+<section id="blog">
+<div class="card">
+<img src="http://portal.iphan.gov.br/uploads/ckfinder/images/Diversas/RJ_Rio_de_Janeiro/52_Rio_de_Janeiro_RJ_Cristo_Redentor_Foto_Acervo_Iphan.jpg">
+<h3>RIO DE JANEIRO</h3>
+<p>Vista incrível da viagem que fiz em 2023 para a cidade maravilhosa.</p>
+</div>
+
+<div class="card">
+<img src="https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/h75bfewbjgveyy76imri?_a=BACAGSGT">
+<h3>NORUEGA</h3>
+<p>Mais um destino incrível que me fez lembrar como o mundo é cheio de lugares inesquecíveis.</p>
+</div>
+
+<div class="card">
+<img src="https://blog.instaviagem.com/wp-content/uploads/2021/12/Italia.jpg">
+<h3>ITÁLIA</h3>
+<p>Entre mar azul, vilas coloridas e paisagens inesquecíveis ,um pedaço do paraíso italiano.</p>
+</div>
+</section>
+
+<section id="blog">
+<div class="card">
+<img src="https://www.adventureclub.com.br/wp-content/uploads/2022/08/Coreia-do-Sul-Cerejeiras-galeria.jpg">
+<h3>COREIA DO SUL</h3>
+<p>Se esse fosse um dorama… esse seria o momento em que tudo muda.</p>
+</div>
+
+<div class="card">
+<img src="https://www.carpemundi.com.br/wp-content/uploads/2019/08/caminhada-lencois-maranhenses-1140x608.jpg.webp">
+<h3>LENÇOIS MARANHENSES</h3>
+<p>A paisagem perfeita e eu pensando: ‘quem foi o dev que programou isso?'</p>
+</div>
+
+<div class="card">
+<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/605702601.jpg?k=a34b6b76d25a3285653e2c3e7fb698de3d3bbc5cfd4d7db1e9d311796d32f5b5&o=">
+<h3>IBIZA</h3>
+<p>Mais um lugar que saiu dos planos e virou realidade.
+E que realidade incrível.</p>
+</div>
+</section>
+
+<section id="contato">
+<h2>Contato</h2>
+<p>Email: blogdememorias@gmail.com</p>
+</section>
+
+<footer>
+<p>© 2026 Blog de Memórias por Gigi</p>
+</footer>
+
+<script>
+function toggleTema() {
+  document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
